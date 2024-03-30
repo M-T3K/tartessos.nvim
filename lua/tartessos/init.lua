@@ -11,8 +11,7 @@ local function do_highlight(group, color)
     vim.cmd('highlight ' .. group .. ' ' .. style .. ' ' .. fg .. ' ' .. bg .. ' ' .. sp)
 end
 
-function M.apply_colorscheme()
-    print("called tartessos.init.apply_colorscheme")
+function M.setup()
     vim.cmd("hi clear")
     if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
@@ -27,12 +26,6 @@ function M.apply_colorscheme()
     for group, color in pairs(highlights.plugins) do
         do_highlight(group, color)
     end
-    print("finished highlighs")
-end
-
-function M.setup()
-    print("called tartessos.init.setup")
-    M.apply_colorscheme()
 end
 
 return M

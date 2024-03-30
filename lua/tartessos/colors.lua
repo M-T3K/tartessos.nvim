@@ -24,7 +24,7 @@ local colors = {
 -- Diff Colors
 colors.diff_add = colors.pistacchio_algae
 colors.diff_remove = colors.vivid_red
-colors.diff_change = colors.vivid_pink
+colors.diff_change = colors.standard_blue
 colors.diff_text = colors.standard_blue
 
 M.base_syntax = {
@@ -111,12 +111,12 @@ M.base_syntax = {
       fg = colors.brown,
     },
     LineNr = {
-      fg = colors.dark_ocean,
-      bg = colors.dark_ocean,
+      fg = colors.white_sand,
+      bg = colors.medium_ocean,
     },
     SignColumn = {
       fg = colors.white_sand,
-      bg = colors.dark_ocean,
+      bg = colors.medium_ocean,
     },
     StatusLine = {
       fg = colors.dark_ocean,
