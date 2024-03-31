@@ -62,7 +62,7 @@ M.base_syntax = {
       bg = colors.dark_ocean,
     },
     CursorLine = {
-      bg = colors.dark_ocean,
+      bg = colors.seafloor_brown,
     },
     NonText = { -- used for "eol", "extends" and "precedes" in listchars
       fg = colors.dark_ocean,
@@ -82,11 +82,11 @@ M.base_syntax = {
       bg = colors.coral_orange,
     },
     CursorLineNr = {
-      fg = colors.coral_orange,
-      bg = colors.dark_ocean,
+      fg = colors.orichalcum,
+      bg = colors.medium_ocean,
     },
     MatchParen = {
-      fg = colors.pink,
+      fg = colors.orichalcum,
     },
     Question = {
       fg = colors.rad_yellow,
@@ -161,19 +161,23 @@ M.base_syntax = {
       bg = colors.diff_add,
     },
     DiffDelete = {
-      bg = colors.diff_remove,
+      fg = colors.diff_remove,
     },
     DiffChange = {
-      bg = colors.diff_change,
+      fg= colors.diff_change,
+      bg = colors.medium_ocean,
     },
     DiffText = {
-      bg = colors.diff_text,
+      fg = colors.diff_text,
+      bg = colors.medium_ocean,
     },
     diffAdded = {
       fg = colors.diff_add,
+      bg = colors.medium_ocean,
     },
     diffRemoved = {
       fg = colors.diff_remove,
+      bg = colors.medium_ocean,
     },
     Folded = {
       fg = colors.blue_grey,
@@ -223,7 +227,7 @@ M.base_syntax = {
       fg = colors.orichalcum,
     },
     Operator = {
-      fg = colors.orichalcum,
+      fg = colors.white_sand,
     },
     Label = {
       fg = colors.orichalcum,
@@ -448,7 +452,7 @@ M.plugins = {
       fg = colors.orichalcum,
     },
     ["@keyword.operator"] = {
-      fg = colors.orichalcum,
+      fg = colors.white_sand,
     },
     ["@keyword.return"] = {
       fg = colors.orichalcum,
@@ -472,7 +476,7 @@ M.plugins = {
       fg = colors.white_sand,
     },
     ["@operator"] = {
-      fg = colors.orichalcum,
+      fg = colors.white_sand,
     },
     ["@parameter"] = {
       fg = colors.white_sand,
