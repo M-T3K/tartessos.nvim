@@ -1,6 +1,8 @@
 -- The M module variable will contain all highlighs so they can be used outside
 local M = {}
 
+local utils = require('tartessos.utils')
+
 local colors = {
     -- Base Colors
     seafloor_brown = '#382b2c',
@@ -68,10 +70,10 @@ M.base_syntax = {
       fg = colors.dark_ocean,
     },
     Visual = {
-      bg = colors.dark_ocean,
+      bg = utils.lighten(colors.medium_ocean, 0.7),
     },
     VisualNOS = {
-      bg = colors.dark_ocean,
+      bg = utils.lighten(colors.medium_ocean, 0.7),
     },
     Search = {
       fg = colors.dark_ocean,
@@ -79,7 +81,7 @@ M.base_syntax = {
     },
     IncSearch = {
       fg = colors.dark_ocean,
-      bg = colors.coral_orange,
+      bg = colors.rad_yellow,
     },
     CursorLineNr = {
       fg = colors.orichalcum,
